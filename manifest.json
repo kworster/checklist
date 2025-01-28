@@ -16,5 +16,15 @@
             "sizes": "512x512",
             "type": "image/png"
         }
-    ]
+    ],
+    "screenshots": [
+    {
+     "src": "image/oip.jpg",
+      "sizes": "320x320",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "checklist"
+    }
+]
+    
 }
