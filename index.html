@@ -9,7 +9,7 @@
     <link rel="manifest" href="manifest.json">
 </head>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MYHM28D1BB"></script>
+<script type="module" async src="https://www.googletagmanager.com/gtag/js?id=G-MYHM28D1BB"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -24,15 +24,6 @@
         <button id="addTaskBtn">Add Task</button>
         <ul id="taskList"></ul>
     </div>
-    <script src="app.js"></script>
-    <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('service-worker.js', {
-                scope: '/checklist/'
-            })
-                .then(reg => console.log('Service Worker Registered'))
-                .catch(err => console.error('Service Worker Error:', err));
-        }
-    </script>
+    <script type="module" src="app.js"></script>
 </body>
 </html>
